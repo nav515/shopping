@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Shoppingbasket</title>
+</head>
+
+<style>
+    .header h2{
+        padding-left: 20px;
+        color: ivory;
+        font-size: 25px;
+    }
+    .header{
+        display: flex;
+        justify-content: space-between;
+        background-color: rgb(39, 65, 39);
+    }
+    .header ul{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 15px;    
+    }
+    .header ul li{
+        text-decoration: none;
+        padding-right: 30px;
+        list-style: none;
+        color: ivory;
+        font-style: oblique;
+        font-size: 18px;
+
+    }
+    .header ul li a{
+        text-decoration: none;
+        color: ivory;
+    }
+
+   
+    .container
+    {   
+        display: flex;
+        justify-content: space-evenly;
+        padding-top: 50px;
+    }
+    .img1
+    {
+        box-sizing: border-box;
+        border:solid black 1px;
+        box-shadow: 0 0 10px 1px;
+    }
+   
+    .img2
+    {
+        box-sizing: border-box;
+        border:solid black 1px;
+        box-shadow: 0 0 10px 1px;
+    }
+    .container img
+    {
+        padding: 10px;
+
+
+    }
+    .container button
+    {
+        margin-left: 10px;
+        margin-bottom: 5px;
+        border-radius: 10px;
+        background-color: rgb(206, 206, 57);
+        
+    }
+
+
+
+    .container1
+    {   
+        display: flex;
+        justify-content: space-evenly;
+        padding-top: 50px;
+    }
+    .img3
+    {
+        box-sizing: border-box;
+        border:solid black 1px;
+        box-shadow: 0 0 10px 1px;
+    }
+   
+    .img4
+    {
+        box-sizing: border-box;
+        border:solid black 1px;
+        box-shadow: 0 0 10px 1px;
+    }
+    .container1 img
+    {
+        padding: 10px;
+
+
+    }
+    .container1 button
+    {
+        margin-left: 10px;
+        margin-bottom: 5px;
+        border-radius: 10px;
+        background-color: rgb(206, 206, 57);
+    }
+
+
+    .container2
+    {   
+        display: flex;
+        justify-content: space-evenly;
+        padding-top: 50px;
+    }
+    .img5
+    {
+        box-sizing: border-box;
+        border:solid black 1px;
+        box-shadow: 0 0 10px 1px;
+    }
+   
+    .img6
+    {
+        box-sizing: border-box;
+        border:solid black 1px;
+        box-shadow: 0 0 10px 1px;
+    }
+    .container2 img
+    {
+        padding: 10px;
+
+
+    }
+    .container2 button
+    {
+        margin-left: 10px;
+        margin-bottom: 5px;
+        border-radius: 10px;
+        background-color: rgb(206, 206, 57);
+    }
+
+
+
+    .container3
+    {   
+        display: flex;
+        justify-content: space-evenly;
+        padding-top: 50px;
+        margin-bottom: 100px;
+    }
+    .img7
+    {
+        box-sizing: border-box;
+        border:solid black 1px;
+        box-shadow: 0 0 10px 1px;
+    }
+   
+    .img8
+    {
+        box-sizing: border-box;
+        border:solid black 1px;
+        box-shadow: 0 0 10px 1px;
+    }
+    .container3 img
+    {
+        padding: 10px;
+
+
+    }
+    .container3 button
+    {
+        margin-left: 10px;
+        margin-bottom: 5px;
+        border-radius: 10px;
+        background-color: rgb(206, 206, 57);
+    }
+    span{
+        padding-left: 10px;
+    }
+    p{
+        padding-left: 10px;
+    }
+
+    footer{
+        text-align: center;
+        background-color: rgb(69, 83, 40);
+        padding-top: 3px;
+        padding-bottom: 2px;
+        color: whitesmoke;
+        font-size: medium;
+    }
+    .header ul li i{
+        color: rgb(240, 240, 217);
+        
+    }
+    .img1 i{
+        color: rgb(158, 158, 46);
+    }
+    .img2 i{
+        color: rgb(158, 158, 46);
+    }
+    .img3 i{
+        color: rgb(158, 158, 46);
+    }
+    .img4 i{
+        color: rgb(158, 158, 46);
+    }
+    .img5 i{
+        color: rgb(158, 158, 46);
+    }
+    .img6 i{
+        color: rgb(158, 158, 46);
+    }
+    .img7 i{
+        color: rgb(158, 158, 46);
+    }
+    .img8 i{
+        color: rgb(158, 158, 46);
+    }
+
+        
+</style>
+<body>
+    <div class="header">   
+        <h2><i class="fa fa-shopping-basket" aria-hidden="true">Fashion House</i></strong></h2>
+        <ul>
+            <li>
+                <i class="fa fa-home" aria-hidden="true"></i>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <i class="fa fa-book" aria-hidden="true"></i>
+                <a href="#">About</a>
+            </li>
+            <li>
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <a href="#">Contact</a>
+            </li>
+            <li>
+                <i class="fa fa-commenting" aria-hidden="true"></i>
+                <a href="#">Feedback</a>
+            </li>
+            <li>
+                <i class="fa fa-lock" aria-hidden="true"></i>
+                <a href="#">Login</a>
+            </li>
+        </ul>
+    </div>
+    <div>
+        <img src="shpng.jpg" width="1503px"; height="500px"></img>
+    </div>
+
+
+
+ 
+    <div class="container">
+
+        <div class='img1'>  
+            <img src="product1.jpg" width="200px" height="300"></img><br>
+            <span>Neutrons|Solid Stretch|Black</span><br>
+
+
+         <p><i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star-half-o" aria-hidden="true"></i><b>1,589/-</b></p>
+
+            <p><b>₹ 2,598/-</b></p>    
+            <button><b>Add to Cart</b></button> 
+             
+        </div>
+
+        <div class="img2">
+            <img src="product2.jpg" width="200px" height="300"></img><br>
+            <span>Anton-Pima|T-Shirt|Green</span><br>
+            <p><i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star-half-o" aria-hidden="true"></i><b>1,589</b></p>
+            <p><b>₹ 2,598/-</b></p>
+            <button><b>Add to Cart</b></button>
+        </div>
+
+    </div>
+
+
+    <div class="container1">
+        <div class=img3>
+            <img src="product3.jpeg" width="200px" height="300"></img><br>
+            <span>Violen-Geometric PrintDress|Navy</span><br>
+            <p> <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star-half-o" aria-hidden="true"></i><b>1,689/-</b>
+            <p><b>₹ 2,698/-</b></p> 
+        </p>    
+            <button><b>Add to Cart</b></button>  
+        </div>
+
+        <div class="img4">
+            <img src="product4.jpg" width="200px" height="300"></img><br>
+            <span>Grid - Solid | Tieup Shirt</span><br>
+            <p><i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star-half-o" aria-hidden="true"></i><b>1,589</b></p>
+            <p><b>₹ 2,898/-</b></p>
+            <button><b>Add to Cart</b></button>
+        </div>
+    </div>
+
+
+    <div class="container2">
+        <div class=img5>
+            <img src="product5.jpg" width="200px" height="300"></img><br>
+            <span>Neutrons|Solid Stretch|Blue</span><br>
+        <p> <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star-half-o" aria-hidden="true"></i><b>1,889/-</b>
+            <p><b>₹ 2,898/-</b></p> 
+        </p>    
+            <button><b>Add to Cart</b></button>  
+        </div>
+
+        <div class="img6">
+            <img src="product6.jpg" width="200px" height="300"></img><br>
+            <span>Neutrons|Solid Stretch|Red</span><br>
+            <p><i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star-half-o" aria-hidden="true"></i><b>1,389</b></p>
+            <p><b>₹ 2,298/-</b></p>
+            <button><b>Add to Cart</b></button>    
+        </div>
+    </div>
+
+
+    <div class="container3">
+        <div class=img7>
+            <img src="product7.jpg" width="200px" height="300"></img><br>
+            <span>Enhance-Floral Print|Dress-Light</span><br>
+        <p> <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star-half-o" aria-hidden="true"></i><b>1,289/-</b>
+            <p><b>₹ 2,198/-</b></p> 
+        </p>    
+            <button><b>Add to Cart</b></button>  
+        </div>
+
+        <div class="img8">
+            <img src="product8.jpg" width="200px" height="300"></img><br>
+            <span>Delight-Floral PrintedDress|Navy</span><br>
+            <p><i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star-half-o" aria-hidden="true"></i><b>1,589</b></p>
+            <p><b>₹ 2,898/-</b></p>
+            <button><b>Add to Cart</b></button>    
+        </div>
+    </div>
+    <div>
+        <footer>
+            <p><b>BY</b><br>
+                <b><i class="fa fa-facebook-official" aria-hidden="true"></i>  NaveenPrince  <i class="fa fa-insta" aria-hidden="true"></i></b></p>
+                <p><b>@copyRight|SatyaTechs|pvt lmt</b></p>
+
+        </footer>
+    </div>
+    
+</body>
+</html>
